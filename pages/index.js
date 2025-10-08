@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
 import RecipeCard from "../Component/RecipeCard";
-import "../styles/globals.css";
 
 export async function getStaticProps() {
     const { data } = await axios.get("https://dummyjson.com/recipes");
@@ -32,7 +31,7 @@ export default function Home({ recipes }) {
                     </div>
                 </div>
                 <div className="right">
-                    <button className="buttonRight bg-orange-500 text-white hover:bg-[#83c9b9] hover:text-gray-600 rounded-full px-4 py-2">Login</button>
+                    <button className="buttonRight bg-orange-500 text-white hover:bg-[#83c9b9] hover:text-gray-600 rounded-full px-4 py-2">Cart</button>
                 </div>
             </div>
             <div>
