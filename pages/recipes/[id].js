@@ -1,6 +1,5 @@
 import axios from "axios";
 import React from "react";
-import "../../styles/globals.css";
 import Link from "next/link";
 
 export async function getServerSideProps({ params }) {
